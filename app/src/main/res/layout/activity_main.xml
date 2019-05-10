@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CadetBlue"
+    tools:context="com.example.android.helloandroid.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/uda" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:fontFamily="sans-serif"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/description"
+            android:textColor="@color/White"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/addresslogo"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/description"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"
+            android:contentDescription="@string/addresslogo"
+            android:src="@drawable/address" />
+
+        <ImageView
+            android:id="@+id/phonelogo"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/addresslogo"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:contentDescription="@string/phonelogo"
+            android:src="@drawable/phone" />
+
+        <ImageView
+            android:id="@+id/weblogo"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/phonelogo"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:contentDescription="@string/weblogo"
+            android:src="@drawable/web" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_marginTop="27dp"
+            android:layout_toEndOf="@id/addresslogo"
+            android:layout_toRightOf="@id/addresslogo"
+            android:autoLink="map"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif"
+            android:paddingEnd="60dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingStart="50dp"
+            android:text="@string/address"
+            android:textColor="@color/White"
+            android:textColorLink="@color/GhostWhite"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/phone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_marginTop="37dp"
+            android:layout_toEndOf="@id/phonelogo"
+            android:layout_toRightOf="@id/phonelogo"
+            android:autoLink="phone"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/phone"
+            android:textColor="@color/White"
+            android:textColorLink="@color/GhostWhite"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/web1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone1"
+            android:layout_marginTop="45dp"
+            android:layout_toEndOf="@id/weblogo"
+            android:layout_toRightOf="@id/weblogo"
+            android:autoLink="web"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/website"
+            android:textColor="@color/White"
+            android:textColorLink="@color/GhostWhite"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+</ScrollView>
